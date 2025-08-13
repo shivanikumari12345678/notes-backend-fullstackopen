@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "build:ui": "rm -rf dist && cd ../notes && npm run build && cp -r dist ../backendnotes",
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push",
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev":"nodemon index.js"
