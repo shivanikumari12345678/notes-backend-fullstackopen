@@ -1,6 +1,2 @@
-POST http://localhost:3001/api/notes
-Content-Type:application/json
-{
-    "content":"aplication json from rest",
-    "important":true
-}
+GET http://localhost:3001/api/notes
+Content-Type: application/json
